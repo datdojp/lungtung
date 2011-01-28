@@ -1,0 +1,28 @@
+function AdClicked(url)
+{ 
+    var clickLineDisabled = "$dcli";
+    if(clickLineDisabled=="1")
+    {
+        return;
+    }
+    
+    var winOpen = "1";
+    if(winOpen == "1")
+    {
+        window.open(url,"");
+    }else
+    {
+        parent.location.href=url; 
+    }
+}
+var clickLineVarName8756085235 = 'http://sr-r3.ace.advertising.com/click/site=0000784889/mnum=0000947063/bnum=823714/cstr=823714=_4d288b61,8756085235,784889^947063^-12^0,1_/xsxdata=$xsxdata/xsinvid=0/imptid=ASd0deb412d0f64e33a17dbac6333118f0?';
+var can_adInfoTag = {};
+can_adInfoTag["8756085235"] = {
+    "CAN_ver": "0.1",
+    "CAN_ann": "Advertising.com",
+    "CAN_anl": "http://advertising.aol.com/privacy/advertisingcom/opt-out",
+    "CAN_maf": "Y"
+};
+document.write('<a href="javascript:AdClicked(clickLineVarName8756085235);" target="_self">');
+document.write('<img src="http://bannerfarm.ace.advertising.com/CDN/168782/suumo_B_2000_300x250_101209.jpg" border="0" width="300" height="250" alt="Click to learn more...">');
+document.write('</a>');

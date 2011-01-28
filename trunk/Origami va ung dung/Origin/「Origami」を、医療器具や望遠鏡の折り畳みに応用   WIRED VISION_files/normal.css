@@ -1,0 +1,208 @@
+/* ------------------Setting----------------------- */
+/* --------------background-color------------------ */
+/* Black */
+.ngWidgetBox_black div#ngOuterBoxContent_rss,
+.ngWidgetBox_black div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	background-color:#000000;
+}
+/* Blue */
+.ngWidgetBox_blue div#ngOuterBoxContent_rss,
+.ngWidgetBox_blue div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	background-color:#0860A8;
+}
+/* Red */
+.ngWidgetBox_red div#ngOuterBoxContent_rss,
+.ngWidgetBox_red div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	background-color:#6F1331;
+}
+/* Purple */
+.ngWidgetBox_purple div#ngOuterBoxContent_rss,
+.ngWidgetBox_purple div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	background-color:#A049A3;
+}
+/* Yellow */
+.ngWidgetBox_yellow div#ngOuterBoxContent_rss,
+.ngWidgetBox_yellow div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	background-color:#999900;
+}
+/* Gray */
+.ngWidgetBox_gray div#ngOuterBoxContent_rss,
+.ngWidgetBox_gray div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	background-color:#CCCCCC;
+}
+/* If RSS_title is two lines -> class ="ngWidgetBox_rss_h2l" */
+.ngWidgetBox_rss_h2l {
+}
+
+/* --------------background-color------------------ */
+
+/* ------------------Layout------------------------ */
+.ngWidgetBox_rss {
+	width:200px;
+	height:250px;
+}
+
+.ngWidgetBox_h {
+	width:500px;
+	height:250px;
+	margin: 0 auto !important;
+}
+.ngWidgetBox_h div#ngOuterBoxContent_rss {
+	float:right;
+}
+.ngWidgetBox_h div#ngOuterBoxContent_banner {
+	float:left;
+}
+
+.ngWidgetBox_v {
+	width:300px;
+	height:500px;
+}
+.ngWidgetBox_v div#ngOuterBoxContent_rss {
+	width:300px !important;
+}
+.ngWidgetBox_v div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h,
+.ngWidgetBox_v div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	width:300px !important;
+}
+.ngWidgetBox_v div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h{
+}
+.ngWidgetBox_v div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5,
+.ngWidgetBox_v div#ngOuterBoxContent_rss li {
+	width:290px !important;
+}
+.ngWidgetBox_v div#ngOuterBoxContent_rss li{
+	background-image:url(http://nmp.newsgator.com/host/BPDSN/img/border_v.gif) !important;
+	height: 41px;
+}
+
+.ngWidgetBox_v div#ngOuterBoxContent_rss li a{
+	width:272px !important;
+}
+/* ------------------Layout------------------------ */
+
+/* ------------------commom------------------------ */
+/* RSS Header */
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5 {
+	background-image:url(http://nmp.newsgator.com/host/BPDSN/img/h_bg.gif);
+	background-color:#000000;
+}
+/* Link Roll-Over */
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5 a:hover,
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss li a:hover {
+	color:#CC3300;
+	text-decoration:underline;
+	background-color:transparent;
+}
+
+.ng_buzzAutoTarget {
+	background-color:#FFFFFF;
+	display:inline;
+}
+.ng_buzzAutoTarget *{
+	margin:0;
+	padding:0;
+}
+.ng_buzzAutoTarget div.ngOuterBoxContent:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Banner */
+.ng_buzzAutoTarget div#ngOuterBoxContent_banner {
+	width:300px;
+	height:250px;
+	overflow: hidden;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_banner *{
+	vertical-align:bottom;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_banner .ad_rectangle {
+	height:275px;
+	margin-top: -25px;
+}
+#submarine.ad_rectangle {
+	margin-top:0;
+}
+
+/* RSS */
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss {
+	text-align:left !important;
+	width:200px;
+	height:250px;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h {
+	width:200px;
+	padding:6px 0;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5 {
+	font-size: 12px;
+	line-height:28px;
+	background-position:0 0;
+	background-repeat: repeat-x;
+	margin:0 5px;
+	width:190px;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5 a{
+	color:#FFFFFF;
+	text-decoration:none;
+	padding-left:10px;
+	display:block;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	width:200px;
+	height:210px;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss ul,
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss ol{
+	list-style-type:none;
+	background-color:#FFFFFF;
+	margin:0 5px 6px;
+	height:204px;
+	overflow:hidden;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss ol{
+	background:#FFFFFF url(http://nmp.newsgator.com/host/BPDSN/img/ranking.gif) 0 1px no-repeat; 
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss li{
+	font-size:12px;
+	font-weight:bold;
+	line-height:1.2em;
+	background:transparent url(http://nmp.newsgator.com/host/BPDSN/img/border.gif) 50% 100% no-repeat;
+	height: 41px;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss li a{
+	color:#000000;
+	text-decoration:none;
+	display:inline-block;
+	margin:6px;
+	width:178px;
+}
+.ng_buzzAutoTarget div#ngOuterBoxContent_rss ol li a{
+	padding-left:15px;
+	width:163px;
+}
+* html .ng_buzzAutoTarget div#ngOuterBoxContent_rss li a{
+	margin: 5px 6px
+}
+.ng_buzzAutoTarget div.ngWidgetBox_rss_h2l div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5{
+	line-height:1.1;
+	height:32px;
+	position:relative;
+}
+.ng_buzzAutoTarget div.ngWidgetBox_rss_h2l div#ngOuterBoxContent_rss div#ngOuterBoxContent_rss_h h5 a{
+	margin-top:-1em;
+	position:absolute;
+	top:50%;
+}
+.ng_buzzAutoTarget div.ngWidgetBox_rss_h2l div#ngOuterBoxContent_rss div.ngInnerBoxContent{
+	height:206px;
+}
+.ng_buzzAutoTarget div.ngWidgetBox_rss_h2l div#ngOuterBoxContent_rss ul,
+.ng_buzzAutoTarget div.ngWidgetBox_rss_h2l div#ngOuterBoxContent_rss ol{
+	height:199px;
+}
+.ng_buzzAutoTarget div.ngWidgetBox_rss_h2l div#ngOuterBoxContent_rss li{
+	height: 40px;
+}

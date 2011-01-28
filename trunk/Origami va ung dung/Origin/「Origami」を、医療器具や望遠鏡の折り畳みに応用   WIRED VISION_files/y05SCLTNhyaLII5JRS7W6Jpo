@@ -1,0 +1,29 @@
+(function(){
+    var src1 = 'http://ad.agilemedia.jp/embed/bmblog.php?code=y05SCLTNhyaLII5JRS7W6Jpo&page=' + escape(location.href);
+    var src2 = 'http://ad.agilemedia.jp/embed/bmblogparts.php?code=y05SCLTNhyaLII5JRS7W6Jpo&page=' + escape(location.href);
+    if (document.referer != null) {
+        src1 += '&referer=' + escape(document.referer);
+        src2 += '&referer=' + escape(document.referer);
+    }
+    var pkey1 = '2068993578';
+    var pkey2 = '257094882';
+
+//    document.write('<script type="text/javascript" charset="utf-8" src="' + src1 + '"></script>');
+//    document.write('<script type="text/javascript" charset="utf-8" src="' + src2 + '"></script>');
+
+    src1 += '&pkey=' + pkey1;
+    src2 += '&pkey=' + pkey2;
+    document.write('<div id="amn_' + pkey1 + '"></div>');
+    document.write('<div id="amn_' + pkey2 + '"></div>');
+    var elem1 = document.createElement('script');
+    var elem2 = document.createElement('script');
+    elem1.type = 'text/javascript';
+    elem1.charset = 'utf-8';
+    elem1.src = src1;
+    elem2.type = 'text/javascript';
+    elem2.charset = 'utf-8';
+    elem2.src = src2;
+    document.getElementById('amn_' + pkey1).appendChild(elem1);
+    document.getElementById('amn_' + pkey2).appendChild(elem2);
+
+})();
