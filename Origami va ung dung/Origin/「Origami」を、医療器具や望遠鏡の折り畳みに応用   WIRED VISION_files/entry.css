@@ -1,0 +1,18 @@
+@import url(/common/css/comp_paging_archive.css);
+@import url(/common/css/comp_entry.css);
+@import url(/common/css/comp_entry_additionals.css);
+
+
+/* ========== entryInfo =========== */
+
+body.economy_business        #entry .pageInfo { border-top-color: #5b88a8; }
+body.environment             #entry .pageInfo { border-top-color: #608c50; }
+body.science_technology      #entry .pageInfo { border-top-color: #987bb5; }
+body.it                      #entry .pageInfo { border-top-color: #6fa39b; }
+body.society                 #entry .pageInfo { border-top-color: #876d6b; }
+body.international_situation #entry .pageInfo { border-top-color: #b49a6a; }
+body.culture                 #entry .pageInfo { border-top-color: #a875a6; }
+body.media                   #entry .pageInfo { border-top-color: #5f976f; }
+body.workingstyle            #entry .pageInfo { border-top-color: #935970; }
+body.hacking                 #entry .pageInfo { border-top-color: #7b7eb5; }
+body.future                  #entry .pageInfo { border-top-color: #778446; }
