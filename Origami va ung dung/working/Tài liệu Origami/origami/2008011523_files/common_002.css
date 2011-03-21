@@ -1,0 +1,20 @@
+/* -----------------------------------------------
+              Wired News
+   ----------------------------------------------- */
+
+/* ========== categories ========== */
+
+/* ----- page bg ----- */
+
+body.economy_business        { background-color: #497593; background-image: url(/news/economy_business/images/base_bg.gif); }
+body.environment             { background-color: #517a41; background-image: url(/news/environment/images/base_bg.gif); }
+body.science_technology      { background-color: #81669d; background-image: url(/news/science_technology/images/base_bg.gif); }
+body.it                      { background-color: #5b8d85; background-image: url(/news/it/images/base_bg.gif); }
+body.society                 { background-color: #745b59; background-image: url(/news/society/images/base_bg.gif); }
+body.international_situation { background-color: #9c8356; background-image: url(/news/international_situation/images/base_bg.gif); }
+body.culture                 { background-color: #91618f; background-image: url(/news/culture/images/base_bg.gif); }
+body.media                   { background-color: #4e835d; background-image: url(/news/media/images/base_bg.gif); }
+body.workingstyle            { background-color: #80495e; background-image: url(/news/workingstyle/images/base_bg.gif); }
+body.hacking                 { background-color: #66689d; background-image: url(/news/hacking/images/base_bg.gif); }
+/* body.future                  { background-color: #677339; background-image: url(/news/future/images/base_bg.gif); } */
+body.design                  { background-color: #677339; background-image: url(/news/design/images/base_bg.gif); }

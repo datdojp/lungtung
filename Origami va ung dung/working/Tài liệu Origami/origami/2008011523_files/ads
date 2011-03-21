@@ -1,0 +1,29 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BZ46Q764mTeHeJoWTcPSu3OMM5vfbzAGQrcmVBsCNtwGAiXoQARgBIInnigI4AFDCxL2yAWDBtfoNsgEOd2lyZWR2aXNpb24uanDIAQHaATFodHRwOi8vd2lyZWR2aXNpb24uanAvbmV3cy8yMDA4MDEvMjAwODAxMTUyMy5odG1sqQLDIaqrtcdJPqgDAegDnALoA7QD6APwBPUDAAAARA&amp;num=1&amp;sig=AGiWqtxoKGTcWwm9clbr2jpgjNQPnLWwaw&amp;client=ca-ntt-goo_js&amp;adurl=http://www.naniwa-rubber.co.jp"; 
+google_ad.visible_url = "www.naniwa-rubber.co.jp"; 
+google_ad.line1 = "\x26#21307;\x26#30274;\x26#29992;\x26#12468;\x26#12512;"; 
+google_ad.line2 = "\x26#21307;\x26#30274;\x26#29992;\x26#12468;\x26#12512;\x26#12539;\x26#12503;\x26#12521;\x26#12473;\x26#12481;\x26#12483;\x26#12463;\x26#35069;\x26#36896;\x26#36009;\x26#22770;"; 
+google_ad.line3 = "\x26#33258;\x26#31038;\x26#12502;\x26#12521;\x26#12531;\x26#12489;\x26#65306;\x26#12458;\x26#12531;\x26#12522;\x26#12540;\x26#12527;\x26#12531;\x26#35069;\x26#21697;"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://wiredvision.jp/news/200801/2008011523.html%26hl%3Dja%26client%3Dca-ntt-goo_js%26adU%3Dwww.naniwa-rubber.co.jp%26adT%3D%25E5%258C%25BB%25E7%2599%2582%25E7%2594%25A8%25E3%2582%25B4%25E3%2583%25A0%26gl%3DVN%26hideleadgen%3D1\x26usg\x3dAFQjCNHgexm9Zg5-j0JxXM9EIGhp8RyRSA";
+var google_attribution_text = "Ads by Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

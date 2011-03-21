@@ -1,0 +1,10 @@
+/*** link share external ***/
+.ZMConnectIcon{font-size:11px; text-decoration:none; float:left; width:16px; display:block; background:url(http://stc.wb.me.zdn.vn/connect/images/icon.gif) no-repeat; line-height:15px; text-indent:-2000em;}
+.ZMConnectIcon_Text{font-size:11px; text-decoration:none; float:left; display:block; padding-left:19px; background:url(http://stc.wb.me.zdn.vn/connect/images/icon.gif) no-repeat; line-height:15px;}
+.ZMConnectText{font-size:11px; text-decoration:none; line-height:15px;}
+.ZMConnectButton{font-size:11px; text-decoration:none; float:left; width:23px; display:block; background:url(http://stc.wb.me.zdn.vn/connect/images/icon_png.png) no-repeat; line-height:23px; text-indent:-2000em;}
+.ZMConnectButton_Text{font-size:11px; text-decoration:none; float:left; display:block; padding-left:23px; padding-right:4px; background:url(http://stc.wb.me.zdn.vn/connect/images/icon.gif) no-repeat; background-position:2px 2px; line-height:19px; border:1px solid #e2e2e2}
+/*** link share internal ***/
+.ZMConnectApp{text-decoration:none; padding:0px 0px 0px 65px; display:inline-block; background:url(http://stc.wb.me.zdn.vn/connect/images/icon4me2.gif) no-repeat;}
+.ZMConnectApp_Text{text-decoration:none; display:inline; padding-left:16px; background:url(http://stc.wb.me.zdn.vn/connect/images/icon4me.gif) no-repeat; line-height:11px;}
+

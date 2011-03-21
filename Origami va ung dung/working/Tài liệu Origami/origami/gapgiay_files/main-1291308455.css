@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* 
+	Copyright Opera Software. 
+	Skin Name: Blue
+*/
+
+
+@import url(http://files.myopera.com/wishingstar_0305/BlueSkin/structure_summer09[1].css);
+@import url(http://files.myopera.com/wishingstar_0305/BlueSkin/photos_4autumnskin[1].css);
+@import url(http://files.myopera.com/wishingstar_0305/BlueSkin/maincolor_summer09[1].css);
+
+
+body {
+	color:#222;
+	}
+
+#wrap0 {
+	background:#031b29 url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_body2.jpg) center top repeat-y;
+	}
+	
+#wrap1 {
+	background:transparent url(http://files.myopera.com/wishingstar_0305/BlueSkin/banner2.jpg) center top no-repeat;
+	}
+
+#wrap2 {
+        background:transparent url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_footer2.jpg) center bottom no-repeat;
+        }
+
+#top { /*edited*/
+	/*background:#668b16 url(top00000.jpg);*/
+	/*border-bottom:1px solid #ddd;*/
+	}
+
+#top2 {
+	font-size:12px;
+	padding-left:80px;
+	}
+
+#top2 h1 {
+	color:#fff;
+	}
+
+#subtitle, #top a {
+	color:#fff;
+	}
+
+#top-photo {
+	border:1px solid #377100;
+	}
+
+#menu {
+	/*background:#f8f8f8 url(menu1000.gif);
+	border-bottom:1px solid #fff;*/
+        margin-top:-75px;
+	}
+
+#menu a:link, #menu a:visited, #menu a:active {
+	/*background:#f8f8f8 url(menu1000.gif);*/ /*edited*/
+	color:#000;
+	border-left:1px solid #99d8ed;
+	border-right:1px solid #279fc6;
+	}
+
+#menu a:hover, #menu #selected:link, #menu #selected:visited {
+	background:#5ebddb url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_menu_hover.jpg) center bottom no-repeat; /*edited*/
+	color:fff;
+	}
+
+a:link, a:visited, a:active, #side a.username:link, #side a.username:visited, #calendar tbody a:link, #calendar tbody a:visited, .title a:hover {
+	color:#3984c3;
+	}
+
+h1, h2, .title a:link, .title a:visited {
+	color:#000; /*edited*/
+	}
+
+#side h2, #side .h2, #side caption {
+	background:#078aee url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_side_h2.jpg) top left repeat-x; /*edited*/
+	color:#fff;
+	}
+
+#side a:link, #side a:visited, #footer a:link, #footer a:visited, .tags a:link, .tags a:visited {
+	color:#222;
+	}
+
+.comment1 {
+	background:url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_comment1.jpg) top left no-repeat;
+	}	
+.comment2 {
+	background:url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_comment2.jpg) top left no-repeat;
+	}
+.ownercomment	{background:url(http://files.myopera.com/wishingstar_0305/BlueSkin/bgr_owner_comment.jpg) top left no-repeat;
+	}
+#meta {
+	width:40%;
+	}
+#footer {
+	margin-bottom:45px;
+	}	
+
+/* Chua phan khung anh cu chuoi */
+
+#albumslides a, #albumslides img {
+	height:161px !important;
+	width:220px !important;
+	}
+
+#albumslides {
+	height:180px !important;
+	}
+
+#albumslides img {
+	display:block !important;
+	margin:9px !important;
+	}
+
+#albumslides {
+	position:relative;
+	background:#fff !important;
+	}
+
+#albumslides a {
+	position:absolute !important;
+	display:block !important;
+	top:0;
+	left:0;
+	}
+
+
+/* :: PERSONAL ADD :: */
+
+#wrap1 {
+font-family: Verdana, Helvetica, sans-serif !important;
+}
+#content {
+font-family: Verdana, Helvetica, sans-serif !important;
+font-size:12px;
+        }
+
+
+/*.img  Giúp chèn Emotion không bị xuống dòng*/
+
+.img {
+	display: inline!important;
+	margin:0px 4px;
+	}
+
+/*Chia bài viết thành 2 cột dùng cho các bài dịch tiếng Việt và tiếng Anh hoặc thơ quá dài*/
+
+#overall {
+	width:520px; 
+	margin:0;
+	}
+.col {
+	width:250px; 
+	padding:0 5px; 
+	float:left;
+	}
+.dropcaps{
+	float:	left;
+	color:	silver;
+	font-size:	50px;
+	line-height:38px;
+	padding:0px 5px 0px 0;	
+	font-family: Times, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	}
+#footer-promo 
+{
+margin-right: 271px;
+background:#C6E1F4;
+}
+#footer #operatxtad {
+margin-right: 271px;
+}
+
+
+#tagcloud ul {
+	margin:0;
+	padding:0;
+	width:100%;
+	overflow:hidden;
+	}
+
+#tagcloud li {
+	list-style-position:outside;
+	list-style:none;
+	float:left;
+	line-height:20px;
+	height:20px;
+	margin:0;
+	padding-right:12px;
+	white-space:nowrap;
+	}
+
+#tagcloud a:link, #tagcloud a:visited, #tagcloud a:active {
+	color:#268;
+	}
+
+#tagcloud .size1 {
+	font-size:11px;
+	font-weight:bold;
+	}
+
+#tagcloud .size2 {
+	font-size:11px;
+	font-weight:bold;
+	}
+
+#tagcloud .size3  {
+	font-size:11px;
+	font-weight:bold;
+	}
+
+#tagcloud .size4  {
+	font-size:11px;
+	font-weight:bold;
+	}
+
+#tagcloud .size5  {
+	font-size:11px;
+	font-weight:bold;
+	}
