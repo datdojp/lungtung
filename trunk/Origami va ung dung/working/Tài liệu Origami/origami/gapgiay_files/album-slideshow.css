@@ -1,0 +1,25 @@
+#albumslides a, #albumslides img {
+	width:214px;
+	height:161px;
+	}
+
+#albumslides {
+	height:175px;
+	}
+
+#albumslides img {
+	display:block;
+	margin:7px;
+	}
+
+#albumslides {
+	position:relative;
+	background:#000;
+	}
+
+#albumslides a {
+	position:absolute;
+	display:block;
+	top:0;
+	left:0;
+    }

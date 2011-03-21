@@ -1,0 +1,168 @@
+/* Giấu một số thông tin ra khỏi trang chính */
+body.page-Trang_Chính #deleteconfirm,
+body.page-Trang_Chính #t-cite,
+body.page-Trang_Chính #footer-info-lastmod,
+body.page-Trang_Chính #siteSub,
+body.page-Trang_Chính h1.firstHeading {
+	display: none !important;
+}
+
+body.page-Trang_Chính #mp-topbanner {
+	margin-top: 0 !important;
+}
+
+#coordinates {  
+	position: absolute;
+	top: -1em;
+	right: 0em;
+	float: right;
+	margin: 0.0em;
+	padding: 0.0em;
+	line-height: 1.5em;
+	text-align: right;
+	text-indent: 0;
+	font-size: 85%;
+	text-transform: none;
+	white-space: nowrap;
+}
+
+/* Đặt các biểu tượng ở phía trên bên phải, dùng trong tiêu bản "Bài viết chọn lọc" */
+div.topicon {
+	position: absolute; 
+	top: -3em;
+	margin-right: -10px;
+	display: block !important;
+}
+
+/* Hiển thị "Bách khoa toàn thư mở Wikipedia" ở dưới tiêu đề */
+body.ns-0 #siteSub,
+body.ns-1 #siteSub {
+	display: inline;
+	font-size: 92%;
+	font-weight: normal;
+}
+
+body.ns-0 div.topicon,
+body.ns-1 div.topicon {
+	top: -2em;
+}
+
+body.ns-0 #coordinates,
+body.ns-1 #coordinates {
+	top: 0em;
+}
+
+/* Nút radio trong phần Gõ tiếng Việt */
+label.radio {font-size: 0.7em;}
+#p-avim .body small,
+#p-avim .body a {
+	font-size: 0.6em !important;
+}
+
+/* Đường vạch ngang trong phần Gõ tiếng Việt */
+#mw-panel > .portal > .body hr {
+	background: url("http://bits.wikimedia.org/skins-1.5/vector/images/portal-break.png?1") no-repeat right top;
+	border-style: none;
+}
+
+/* Sửa các lỗi cho skin Vectơ */
+
+/* Tạm sửa đến khi [[bugzilla:19567]] được giải quyết */
+#siteNotice div {
+	margin: 0;
+}
+#siteNotice div.expanded table.siteNoticeUser {
+	margin-bottom: 1em;
+}
+
+/* Icon cho các bài chọn lọc, bài chất lượng tốt */
+
+#mw-panel div.portal div.body ul li.FA {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/4/4c/Icone_AdQ.png") no-repeat 0% 0%;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+#mw-panel div.portal div.body ul li.GA {
+	background: url("http://upload.wikimedia.org/wikipedia/fr/8/86/Icone_BA.png") no-repeat 0% 0%;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+/**
+ * Phân biệt những không gian tên không phải bài viết với màu xanh nõn chuối, giống nền màu vàng trong MonoBook
+ * 
+ * Trước tiên, định rõ hình nền của không gian tên phụ. Sau đó, định rõ hình nền mặc định của Vectơ cho các không gian tên 0 (bài) và 100 (chủ đề).
+ */
+@media screen {
+	
+	/* Khung viền của nội dung */
+	#content, #mw-head-base, #footer {
+		background-image: url("http://upload.wikimedia.org/wikipedia/commons/1/1a/CCFF99_swatch.png");
+	}
+	.ns-0 #content, .ns-0 #mw-head-base, .ns-0 #footer,
+	.ns-100 #content, .ns-100 #mw-head-base, .ns-100 #footer {
+		background-image: url("http://bits.wikimedia.org/skins-1.5/vector/images/border.png?1");
+	}
+	
+	/* Khung viền của thẻ */
+	div.vectorTabs li a, div.vectorTabs, div.vectorTabs ul, div.vectorMenu h5 a {
+		background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/27/Vector_tab_border%2C_lime.png");
+	}
+	.ns-0 div.vectorTabs li a, .ns-0 div.vectorTabs, .ns-0 div.vectorTabs ul, .ns-0 div.vectorMenu h5 a,
+	.ns-100 div.vectorTabs li a, .ns-100 div.vectorTabs, .ns-100 div.vectorTabs ul, .ns-100 div.vectorMenu h5 a {
+		background-image: url("http://bits.wikimedia.org/skins-1.5/vector/images/tab-break.png?1");
+	}
+	
+	/* Nền thẻ */
+	div.vectorTabs ul li {
+		background-image: url("http://upload.wikimedia.org/wikipedia/commons/8/83/Vector_tab_background%2C_lime.png");
+	}
+	.ns-0 div.vectorTabs ul li,
+	.ns-100 div.vectorTabs ul li {
+		background-image: url("http://bits.wikimedia.org/skins-1.5/vector/images/tab-normal-fade.png?1");
+	}
+	div.vectorTabs li.selected {
+		background: white;
+	}
+	
+	/* Thẻ Theo dõi */
+	#ca-unwatch.icon a, #ca-watch.icon a, #ca-unwatch.icon a:hover, #ca-watch.icon a:hover {
+		background-image: url("http://upload.wikimedia.org/wikipedia/commons/9/9a/Vector_watch_icons%2C_lime.png");
+	}
+	.ns-0 #ca-unwatch.icon a, .ns-0 #ca-watch.icon a, .ns-0 #ca-unwatch.icon a:hover, .ns-0 #ca-watch.icon a:hover,
+	.ns-100 #ca-unwatch.icon a, .ns-100 #ca-watch.icon a, .ns-100 #ca-unwatch.icon a:hover, .ns-100 #ca-watch.icon a:hover {
+		background-image: url("http://bits.wikimedia.org/skins-1.5/vector/images/watch-icons.png?1");
+	}
+	#ca-unwatch.icon a.loading, #ca-watch.icon a.loading {
+		background-image: url("http://bits.wikimedia.org/skins-1.5/vector/images/watch-icon-loading.gif?1");
+	}
+	
+	/* Hộp sửa đổi: Thanh công cụ sửa đổi */
+	.wikiEditor-ui-toolbar {
+		background-image: url("http://upload.wikimedia.org/wikipedia/commons/9/96/WikiEditor_toolbar_background%2C_lime.png");
+	}
+	.ns-0 .wikiEditor-ui-toolbar,
+	.ns-100 .wikiEditor-ui-toolbar {
+		background-image: url("http://bits.wikimedia.org/w/extensions/UsabilityInitiative/images/wikiEditor/toolbar/base.png?1");
+	}
+	
+	/* Hộp sửa đổi: Nền chỉ mục các bảng và khoản trong trình đơn Đề mục */
+	.wikiEditor-ui-toolbar .sections .section, .wikiEditor-ui-toolbar .group .tool-select .options .option:hover {
+		background-color: #ebffd8;
+	}
+	.ns-0 .wikiEditor-ui-toolbar .sections .section, .ns-0 .wikiEditor-ui-toolbar .group .tool-select .options .option:hover,
+	.ns-100 .wikiEditor-ui-toolbar .sections .section, .ns-100 .wikiEditor-ui-toolbar .group .tool-select .options .option:hover {
+		background-color: #e0eef7;
+	}
+	
+	/* Hộp sửa đổi: Ký tự trong bảng Ký tự đặc biệt */
+	.wikiEditor-ui-toolbar .page-characters div span:hover {
+		border-color: #ccff99;
+	}
+	.ns-0 .wikiEditor-ui-toolbar .page-characters div span:hover,
+	.ns-100 .wikiEditor-ui-toolbar .page-characters div span:hover {
+		border-color: #a8d7f9;
+	}
+	
+} /* kết @media screen */

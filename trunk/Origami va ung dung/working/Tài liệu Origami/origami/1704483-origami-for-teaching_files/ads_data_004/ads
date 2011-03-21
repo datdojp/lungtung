@@ -1,0 +1,53 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=B8EcxjbAmTeD6JIircP_26EnDv5CEAvOKttoYwI23AdCsIBABGAEggdaCAigDOABQldPHoQVgwbX6DbIBDnd3dy5oZWxpdW0uY29tugEKMzAweDI1MF9qc8gBAdoBOGh0dHA6Ly93d3cuaGVsaXVtLmNvbS9pdGVtcy8xNzA0NDgzLW9yaWdhbWktZm9yLXRlYWNoaW5ngAIByALroYsZqAMB6ANK6AO8BegD8wL1AwAAAEQ&amp;num=1&amp;sig=AGiWqtxuHf5QakVrXURPKWlv_QFvhTZ5rg&amp;client=ca-pub-8925353227623969&amp;adurl=http://www.fairfield.edu/admission/uga_international.html"; 
+google_ad.visible_url = "www.Fairfield.edu/International"; 
+google_ad.line1 = "Attn: Business Students"; 
+google_ad.line2 = "Get an Accredited Business Degree"; 
+google_ad.line3 = "At Fairfield University- Info Here!"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BaJEnjbAmTeD6JIircP_26EnRk4_xAaPUlYoJwI23AcCpBxACGAIggdaCAigDOABQicL29_3_____AWDBtfoNoAG10PD2A7IBDnd3dy5oZWxpdW0uY29tugEKMzAweDI1MF9qc8gBAdoBOGh0dHA6Ly93d3cuaGVsaXVtLmNvbS9pdGVtcy8xNzA0NDgzLW9yaWdhbWktZm9yLXRlYWNoaW5ngAIBqAMB6ANK6AO8BegD8wL1AwAAAEQ&amp;num=2&amp;sig=AGiWqtz7xGRtyFydkrA0KPx0lvFqhtQmbw&amp;client=ca-pub-8925353227623969&amp;adurl=http://www.kbteachers.com"; 
+google_ad.visible_url = "www.kbteachers.com"; 
+google_ad.line1 = "Have Fun Learning English"; 
+google_ad.line2 = "Great learning and teaching aides"; 
+google_ad.line3 = "created by native english speakers"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BCOqBjbAmTeD6JIircP_26EnemMLyAd7eo-4XwI23AfCEDhADGAMggdaCAigDOABQn6KeuQFgwbX6DbIBDnd3dy5oZWxpdW0uY29tugEKMzAweDI1MF9qc8gBAdoBOGh0dHA6Ly93d3cuaGVsaXVtLmNvbS9pdGVtcy8xNzA0NDgzLW9yaWdhbWktZm9yLXRlYWNoaW5nqAMB6ANK6AO8BegD8wL1AwAAAEQ&amp;num=3&amp;sig=AGiWqtztL9IahI8ID9t5EOlx6f_LqGirNg&amp;client=ca-pub-8925353227623969&amp;adurl=http://www.supermagnetman.net/index.php%3FcPath%3D62"; 
+google_ad.visible_url = "www.supermagnetman.net"; 
+google_ad.line1 = "Magnetic Science Kits"; 
+google_ad.line2 = "Magnetic tools useful for teaching!"; 
+google_ad.line3 = "Perfect for any classroom."; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.helium.com/items/1704483-origami-for-teaching%26hl%3Den%26client%3Dca-pub-8925353227623969%26adU%3Dwww.Fairfield.edu/International%26adT%3DAttn:%2BBusiness%2BStudents%26adU%3Dwww.kbteachers.com%26adT%3DHave%2BFun%2BLearning%2BEnglish%26adU%3Dwww.supermagnetman.net%26adT%3DMagnetic%2BScience%2BKits%26gl%3DVN\x26usg\x3dAFQjCNGGTYb2RoQM6Ppdve1f2rTjrtXk-w";
+var google_attribution_text = "Ads by Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

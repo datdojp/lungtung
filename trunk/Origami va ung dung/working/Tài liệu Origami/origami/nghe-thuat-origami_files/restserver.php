@@ -1,0 +1,1 @@
+fb_sharepro_render([{"url":"http:\/\/truyenmoi.com","share_count":202,"like_count":24,"comment_count":22,"total_count":248,"click_count":0,"normalized_url":"http:\/\/www.truyenmoi.com\/","comments_fbid":null}]);
