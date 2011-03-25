@@ -1,0 +1,307 @@
+/*****************************************************************************************************************
+ * CSS for new-style comments
+ ****************************************************************************************************************/
+
+#comment-list {
+	padding: 0 10px;
+}
+#photo_enlarge #comment-list,
+#photo_enlarge .rte_fieldset {
+	width: 504px; /* same width as photo box */
+	padding: 10px;
+}
+
+#comment-list span.link {
+	/* fake link */
+	color: #0066BB;
+	cursor: pointer;
+}
+#comment-list a {
+	cursor: pointer; /* for links without an href */
+}
+
+#comment-list .hd {
+	font-size: 93%;
+	margin: 0.5em;
+	*zoom: 1;
+}
+#comment-list .hd h3 {
+	font-weight: bold;
+	font-size: 138.5%;
+}
+#comment-list .hd .pagination .total {
+	display: none;
+}
+#comment-list #comments-reorder {
+	float: right;
+	padding: 0;
+	font-size: 85%;
+}
+#comment-list .hd .comments-toggle {
+	float: left;
+}
+#comment-list .hd:after {
+	content:".";
+	display:block;
+	font-size:0px;
+	line-height:0px;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+#comment-list .hd .comments-toggle a {
+	margin: 0 1em 0 0 ;
+}
+#comment-list .hd .comments-toggle span.hide {
+	display: none;
+}
+
+#comment-list .pagination {
+	background: none;
+	padding: 0;
+	clear: none;
+}
+
+#comment-list .bd ol {
+	margin: 0;
+}
+#comment-list .bd ol li {
+	list-style-type: none;
+	clear: both;
+	padding: 10px 0;
+	border-top: 1px dotted #ccc;
+}
+#comment-list .bd ol li.comment-reply {
+	margin-left: 50px;
+}
+#comment-list .bd ol li .user {
+	float: left;
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+	height: 60px; /* bg image for hover is actually 80px but too big? */
+}
+#comment-list .bd ol li .user-hover {
+	background: url(http://l.yimg.com/hb/i/blog/img/global/ua_nav_base.gif) no-repeat 0 0;
+}
+#comment-list .bd ol li .comment {
+	background: none;
+	padding: 0;
+	margin: 0 75px 0 60px;
+	overflow: hidden;
+}
+#comment-list .bd ol li .comment .hd {
+	font-size: 85%;
+	color: #999;
+	margin: 0 0 0.5em;
+}
+#comment-list .bd ol li .comment .hd h4 {
+	font-size: 123.1%;
+	font-weight: bold;
+	display: inline;
+	margin-right: 0.25em;
+}
+#comment-list .bd ol li .comment .hd .date {
+	display: inline;
+}
+#comment-list .bd .comment .lock {
+	background: url("http://l.yimg.com/hb/i/vn/blog/i/blog/mod-ico-lock.gif") no-repeat scroll 0 -28px transparent;
+	cursor: text;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-top: 2px;
+}
+#comment-list .bd .comment .lock em {
+	display: none;
+}
+#comment-list .bd ol li .comment .bd {
+	padding: 0;
+}
+#comment-list .bd ol li .comment .ft {
+	font-size: 85%;
+	padding: 0;
+	margin: 0.5em 0 0;
+}
+#comment-list .bd ol li .action {
+	float: right;
+	width: 75px;
+	font-size: 85%;
+	text-align: right;
+}
+#comment-list .bd ol li .action ul {
+	margin: 0;
+	padding: 0;
+}
+#comment-list .bd ol li .action ul li {
+	list-style-type: none;
+	margin: 0 0 0.25em;
+	padding: 0;
+	border: 0;
+	clear: none;
+}
+
+#comment-list .multiple-delete {
+	clear: both;
+	font-size: 85%;
+	text-align: right;
+	margin: 0 0 0.5em;
+}
+#comment-list .multiple-delete .select-all {
+	display: none; /* hide bar first, enable via js when actions are in */
+}
+#comment-list .multiple-delete input.checkbox {
+	vertical-align: baseline;
+}
+#comment-list li.del label span.link:hover {
+	text-decoration: underline;
+}
+
+/*****************************************************************************************************************
+ * User action dropdown menu styles
+ ****************************************************************************************************************/
+/* menu trigger */
+#comment-list .user-hover .user-actions .yui3-menu-label {
+	background: url(http://l.yimg.com/hb/i/blog/img/global/ua_nav_inactive.png) no-repeat 0 0 transparent;
+	height: 18px;
+	width: 40px;
+	cursor: pointer;
+}
+#comment-list .user-hover .user-actions .yui3-menu-label-menuvisible,
+#comment-list .user-hover .user-actions .yui3-menu-label-active {
+	background-image: url(http://l.yimg.com/hb/i/blog/img/global/ua_nav_active.png);
+}
+#comment-list .user-actions .yui3-menu-label span {
+	display: none;
+}
+
+#comment-list .user-actions {
+/*	visibility: hidden; */
+	font-size: 85%;
+}
+#comment-list .user-hover .user-actions {
+	visibility: visible;
+}
+#comment-list .user-actions-nav {
+	display: none; /* hide first before mouseover on label */
+	margin-left: -10px; /* flush left */
+}
+#comment-list .user-actions-nav .yui3-menu-content {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-width: 0 1px;
+	padding: 0 4px;
+}
+
+#comment-list .user-actions .yui3-menu-content ul {
+	margin: 0;
+}
+#comment-list .user-actions .yui3-menu-content ul li {
+	list-style-type: none;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+#comment-list .user-actions-nav .yui3-menu-content ul li {
+	padding: 3px 2px 3px 3px;	
+}
+#comment-list .user-actions .yui3-menu ul {
+	border-top: 1px solid #ccc;
+	margin-top: 3px;
+	padding-top: 3px;
+}
+#comment-list .user-actions .yui3-menu ul.first-of-type {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+#comment-list .user-actions .yui3-menuitem,
+#comment-list .user-actions .yui3-menu-label,
+#comment-list .user-actions .relation {
+	padding: 3px 2px 3px 3px;
+}
+#comment-list .user-actions .yui3-menuitem {
+	list-style-type: none;
+	margin: 0;
+}
+
+#comment-list .user-actions-nav .yui3-menuitem-active,
+#comment-list .user-actions-nav .yui3-menu-label-active,
+#comment-list .user-actions-nav .yui3-menu-label-menuvisible {
+	background-color: #cef;
+}
+#comment-list .user-actions .user-actions-nav .yui3-menu-content {
+	background-color: #fff;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding: 0 4px;
+}
+#comment-list .user-actions-nav {
+	width: 150px;
+}
+
+/* the following are for rounded-corner menu/submenu */
+#comment-list .user-actions .yui3-menu .yui3-menu-content {
+	border-top: 0;
+	border-bottom: 0;
+	padding: 0;
+}
+#comment-list .user-actions .yui3-menu-corner {
+	padding: 0 0 0 4px;
+	background: url(http://l.yimg.com/hb/i/blog/img/global/sprite_v.gif) no-repeat scroll 0 -5px transparent;
+}
+#comment-list .user-actions .yui3-menu-corner div {
+	height: 5px;
+	background-image: url(http://l.yimg.com/hb/i/blog/img/global/sprite_v.gif);
+	background-repeat: no-repeat;
+	_position: relative;
+	_font-size: 0;
+}
+#comment-list .user-actions .yui3-menu-corner-bl {
+	background-position: 0 -16px;
+}
+#comment-list .user-actions .yui3-menu-corner .yui3-menu-corner-tr {
+	background-position: top right;
+}
+#comment-list .user-actions .yui3-menu-corner-br {
+	background-position: right -10px;
+}
+/* --- end of rounded-corner menu/submenu --- */
+
+/******************************************************************************************************************
+ * Guestbook
+ *****************************************************************************************************************/
+#guestbook-listing .titlebar .hd {
+	float: left;
+}
+#guestbook-listing .titlebar .bd {
+	float: right;
+	padding-top: 0;
+	background: transparent;
+	padding: 0 0 5px 0;
+}
+#guestbook-listing .titlebar {
+	zoom: 1;
+	overflow:hidden;
+}
+#guestbook-listing .guestbook-comments .hd h3,
+#guestbook-listing .guestbook-comments .hd .comments-toggle {
+	display: none;
+}
+
+/******************************************************************************************************************
+ * Single photo page fix
+ *****************************************************************************************************************/
+#photo_enlarge .rte_options fieldset {
+    clear: both;
+}
+
+
+/******************************************************************************************************************
+ * Error messages
+ *****************************************************************************************************************/
+#comment-list #error li {
+    border: 0;
+    padding: 0;
+}
