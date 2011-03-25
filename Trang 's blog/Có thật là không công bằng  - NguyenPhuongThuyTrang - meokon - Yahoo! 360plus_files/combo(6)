@@ -1,0 +1,203 @@
+/**********************************************
+ * Comments JS
+ **********************************************/
+YUI.add("blog-comments", function(Y) {
+	var Comments = {
+		init : function() {
+			
+			var type = 'article';
+			if( Y.one('.photo-comments') ) {
+				type = 'photo';
+			} else if( Y.one( '.guestbook-comments' ) ) {
+				type = 'guestbook';
+			}
+
+			// multi-delete select all
+			Y.on( 'click', function(e){
+				Y.all( '#comment-list input.delcheck' ).set( 'checked', e.target.get('checked') );
+			}, '#comment-list input.allcheckbox[type=checkbox]' );
+			Y.all( '.multiple-delete .select-all' ).setStyle('display', 'inline');
+			
+			// fake delete link
+			Y.on( 'click', function(e) {
+				e.preventDefault();
+
+				// blogname,pid,cid,crumb
+				var cid = e.target.get('id');
+				cid = cid.split( '-' );
+				cid = cid[1];
+				if(window.confirm( Y.Blog.Config.text._confirm_delete ) ){
+					if( Y.one( '#blog_myblog_index' ) ) {
+						// article-' + cid
+						var input = Y.one( '#chkbox-article-' + cid );
+						var ctype = 'article-';
+						if( !input ) {
+							input = Y.one( '#chkbox-comment-' + cid );
+							ctype = 'comment-';
+						}
+						input.set( 'value', ctype + cid );
+					} else {
+						var val = Y.one( 'input[value=photo-' + cid + ']' );
+						if( !val ) {
+							val = Y.one( 'input[value=article-' + cid + ']' );
+						}
+						if( !val ) {
+							val = Y.one( 'input[value=' + cid + ']' );
+						}
+						if( !val ) {
+							val = Y.one( 'input[value=comment-' + cid + ']' );
+						}
+						val.set( 'checked', 'true' );
+					}
+					Y.one( 'form#manage-comments' ).submit();
+				}
+			}, '#comment-list li.del label a.delete' );
+			Y.all( '#comment-list li.del label a.delete' ).addClass( 'link' );
+			
+			// hide comments fake link
+			if( Y.one( '#show-comments' ) && Y.one( '#hide-comments' ) ) {
+				Y.on( 'click', function(e) {
+					e.preventDefault();
+					Y.one( '#comment-list > .bd' ).setStyle( 'display', 'none' );
+					Y.one( '#show-comments' ).setStyle( 'display', 'inline' );
+					e.target.setStyle( 'display', 'none' );
+					
+					// for blog itself, hide the rte
+					if( Y.one('#blog_myblog_index') ) {
+						Y.one( '#main-comment-rte' ).setStyle('display','none');
+					}
+				}, '#hide-comments' );
+				Y.on( 'click', function(e) {
+					e.preventDefault();
+					Y.one( '#comment-list > .bd' ).setStyle( 'display', 'block' );
+					Y.one( '#hide-comments' ).setStyle( 'display', 'inline' );
+					e.target.setStyle( 'display', 'none' );
+
+					// for blog itself, hide the rte
+					if( Y.one('#blog_myblog_index') ) {
+						Y.one( '#main-comment-rte' ).setStyle('display','block');
+					}
+				}, '#show-comments' );
+				
+				if( Y.one( '#comment-list > .bd' ).getStyle('display') == 'none' ) {
+					Y.one( '#hide-comments' ).setStyle( 'display', 'none' ); // reset
+				} else {
+					Y.one( '#show-comments' ).setStyle( 'display', 'none' ); // reset
+				}
+				Y.one( '.comments-toggle .hide' ).setStyle( 'display', 'inline' );					
+			}
+			
+			// we need to auto-expand comment replies that have error
+			var errorDiv = Y.one( '#error' );
+			if( errorDiv && type == 'article' ) {
+			    var enclosingComment = errorDiv.ancestor( function(o){
+			        if( o.hasClass( 'responding' ) )
+			            return o;
+			    } );
+			    var id = enclosingComment.get( 'id' ).replace( 'reply_container_', '' ); // comment id
+
+			    enclosingComment.setStyle( 'display', 'block' );
+			    Y.one( '#rte_reply_editor_' + id + '_value' ).setStyle( 'display', 'none' );
+
+                // render rte
+			    var commentRTE = new YAHOO.widget.RTE( "rte_reply_editor_" + id, "reply_form_" + id, "reply_editor_" + id, "hgs|fv|biu|tc|pl|OI");
+			    commentRTE.render();
+			    commentRTE.setHTML( Y.one( '#rte_reply_editor_' + id + '_value' ).get('value') );
+			    Y.on( 'click', function(e, o) {
+			        this.toggleEditor;
+			    }, '#reply_editor_' + id + '_edit_html', commentRTE );
+			    
+			    var submitButton = Y.one( '#post_reply_editor_' + id + '_button' );
+			    submitButton.purge();
+			    
+			    Y.on( 'click', function(e){
+			        Y.one( '#form_article_comments_act' ).set( 'value', 'reply_comment' );
+			        Y.one( '#form_comment_id' ).set( 'value', this.id );
+			        Y.one( '#form_extendflag' ).set( 'value', 'on' );
+			        this.rte.submitContent();
+			    }, '#post_reply_editor_' + id + '_button', {rte : commentRTE, id : id} );
+			}
+			
+			if( Y.all( '#comment-list .user-actions' ) ) {
+				// there are user action dropdowns in the page
+
+				// user menu
+				Y.all("#comment-list .yui3-menu").each(function (node) {
+					if( !node.hasClass( 'user-actions') ) {
+						node.prepend('<div class="yui3-menu-corner yui3-menu-corner-tl"><div class="yui3-menu-corner-tr"></div></div>');
+						node.append('<div class="yui3-menu-corner yui3-menu-corner-bl"><div class="yui3-menu-corner-br"></div></div>');					
+					}
+				});
+
+				var menuList = Y.all(".user-actions");
+				menuList.plug(Y.Plugin.NodeMenuNav, {
+					submenuShowDelay: 100,
+					mouseOutHideDelay: 100
+				});
+				Y.all( '#comment-list .user-actions-nav' ).setStyle('display','block');
+
+				// speshul stuff in the menu (.add-friend, .ignore-friend)
+				// @TODO - using old panel handlers, must migrate
+				Y.on( 'click', function(e){
+					if( !e.target.hasClass('add-friend') && !e.target.hasClass('ban-user') )
+						return;
+					e.preventDefault();
+
+					var loader = YAHOO.Blog.dialogueLoader;
+					loader.clickHandler = function(e) {
+						/* must use old-style events as e is not normalized yui3 way */
+						var target = YAHOO.util.Event.getTarget(e);
+						var cName = target.className;
+						switch (cName) {
+							case "btn_save":
+								YAHOO.util.Event.stopEvent(e);
+								loader.load({
+									method: "POST",
+									form: target.form
+								});
+								break;
+							case "btn_close":
+								loader.clear();
+								break;
+						}
+					}
+					loader.load({
+						method: "GET",
+						url: e.target.get('href')
+					});
+
+				}, '#comment-list ol li.comment .yui3-menu li a' );
+				
+				// user avatar background hover
+				Y.on( 'mouseover', function(e) {
+					// menu indication trigger
+					var hover = e.target;
+					if( !hover.hasClass('user') )
+						hover = hover.ancestor( 'div.user' );
+
+					var id = hover.get('id');
+					id = id.split('-');
+					id = id[1];
+					if( Y.one( '#user-actions-nav-' + id ) ) // only if nav is available
+						hover.addClass( 'user-hover' );
+				}, '#comment-list ol li.comment div.user' );
+				Y.on( 'mouseout', function(e) {
+					// remove the pretteh bg
+					var hover = e.target;
+					var stillInUserDiv = false;
+					if( e.relatedTarget.ancestor( 'div.user' ) || e.relatedTarget.hasClass('user') ) {
+						stillInUserDiv = true;
+					}
+					if( Y.UA.ie && !hover.hasClass('user') && stillInUserDiv ) {
+						return;						
+					}
+					if( !hover.hasClass('user') )
+						hover = hover.ancestor( 'div.user' );
+					hover.removeClass( 'user-hover' );
+				}, '#comment-list ol li.comment div.user' );
+
+			}
+		} 
+	};
+	Y.namespace("Blog").Comments = Comments;
+}, '1.0', { requires: ['blog-config', 'node', 'node-menunav' ] });

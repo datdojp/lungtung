@@ -1,0 +1,153 @@
+/* link */
+a{color:#72666F;}
+a:hover{color:#000F03;}
+
+/* Background */
+body.blog_my,
+body.blog_my_index,
+body.comment_listing,
+body.trackback_listing,
+body.blog_archives_folder,
+body.blog_archives_date,
+body.blog_archives_all,
+body.post_rte,
+body.post_doodle,
+body.guestbook,
+body.comment_list,
+body.subscribe_list,
+body.post_gb,
+body.profile_view,
+body.gallery,
+body.photo_big,
+body.slideshow,
+body.photo_upload_pc,
+body.photo_upload_gallery
+{ background: #FFFFFF url(http://l.yimg.com/hb/i/vn/blog/i/blog/cat4_5.gif) repeat; }
+/* Blog title */
+#blog_title h2 { color:#716E65; }
+#blog_title .bd {background-color:#000000; color:#FFFFFF; }
+/* Secondary module header */
+.col-150 .rc_bd  .rc_bc .hd .titlebar .hd,
+.col-150 .rc_bd  .rc_bc .hd .titlebar  /* JW */
+{background:#EDE7D4; }
+.col-150 .rc_bd  .rc_bc .hd .titlebar .hd h2, .col-150 .rc_bd  .rc_bc .hd .titlebar .hd a		/* JW */
+{color:#667271;   }
+.col-150 .hd .titlebar .hd a:hover	/* JW */
+{color:#FFF;text-decoration: underline; }
+/* Secondary module content */
+.col-150 .rc_bd  .rc_bc .bd /* JW */
+{ background:#FFFFFF; color:#F86A77;}
+#calendar .hd .titlebar .hd, #calendar .hd .titlebar .bd a,
+{ color:#;     }
+#calendar .bd td strong { color:#F44900; }
+/* Primary module header */
+.col-600 .rc_bd  .rc_bc .hd .titlebar,	/*JW*/
+.row-920 .rc_bd  .rc_bc .hd .titlebar,	/*JW*/
+.row-760 .rc_bd  .rc_bc .hd .titlebar		/*JW*/
+{ background:#EDE7D4; color:#667172;}
+/* Primary module content */
+.col-600 .rc_bd  .rc_bc .bd,.col-600 .rc_bd  .rc_bc .ft,	/*JW*/
+.row-920 .rc_bd  .rc_bc .bd,.row-920 .rc_bd  .rc_bc .ft,	/*JW*/
+.row-760 .rc_bd  .rc_bc .bd,.row-760 .rc_bd  .rc_bc .ft		/*JW*/
+
+{ background:#FFFFFF; color:#667271;}
+#canon_profile_highlight .bd { padding-top:10px; BACKGROUND: # COLOR: #; }
+#canon_profile_highlight .bd A{ COLOR: #; }
+
+#m_article_list_full A, #m_article_list_full A:hover{ COLOR: #; }
+#blast A, #blast A:hover{ COLOR: #; }
+/*-------- Bookmark CSS --------*/
+			.col-150 .bookmark{width:150px;text-align:left;}
+.col-150 .bookmark .rc_1{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark150t1c1-hd.gif) no-repeat 0 0;padding:72px 0 0 0;}
+.col-150 .bookmark .rc_2{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark150t1c1-ft.gif) no-repeat left bottom;padding:0 0 13px 0;}
+.col-150 .bookmark .rc_3{}
+.col-150 .bookmark .rc_4{background:#ffcccc;}
+.col-150 .bookmark .rc_5{padding:0 4px;}
+.col-150 .bookmark .rc_6{}
+.col-150 .bookmark .ctnr{}
+.col-150 .bookmark .new_rc{display:none;}
+.col-150 .bookmark .new_rc div{}
+.col-150 .bookmark .new_rc_bd{background:#e9a5b0;}
+.col-150 .bookmark .new_rc_bc{background:#ffefef;margin:1px;}
+.col-150 .bookmark .new_rc_ft{display:none;}
+.col-150 .bookmark .new_rc_ft div{}
+.col-150 .bookmark .ctnr h3{font-weight:bold;font-size:14px;padding:10px 5px;color:#666;}
+.col-150 .bookmark ul{list-style:none;}
+.col-150 .bookmark ul li{width:118px;overflow:hidden;background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-ico-li-1.gif) no-repeat 2px 5px;padding:0 0 10px 10px;margin:3px;font-size:12px;*font-size:11px;}
+.col-150 .bookmark ul li a{color:#61187f;text-decoration:none}
+.col-150 .bookmark ul li a:hover{color:#61187f;text-decoration:underline;}
+
+.col-600 .bookmark{width:600px;text-align:left;}
+.col-600 .bookmark .rc_1{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-sw.gif) no-repeat 0 bottom;}
+.col-600 .bookmark .rc_2{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-nw.gif) no-repeat 0 0;padding:0 0 0 15px;}
+.col-600 .bookmark .rc_3{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-se.gif) no-repeat right bottom;}
+.col-600 .bookmark .rc_4{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-ne.gif) no-repeat right top;}
+.col-600 .bookmark .rc_5{padding:0 56px 0 0;}
+.col-600 .bookmark .rc_6{background:#ffcfcf;padding:6px 18px 6px 0;}
+.col-600 .bookmark .ctnr{}
+.col-600 .bookmark .new_rc{display:none;}
+.col-600 .bookmark .new_rc div{}
+.col-600 .bookmark .new_rc_bd{background:#d495a0;padding:1px;}
+.col-600 .bookmark .new_rc_bc{background:#fff0f1;}
+.col-600 .bookmark .new_rc_ft{display:none;}
+.col-600 .bookmark .new_rc_ft div{}
+.col-600 .bookmark .ctnr h3{font-weight:bold;font-size:14px;padding:10px 5px;color:#666;}
+.col-600 .bookmark ul{list-style:none;}
+.col-600 .bookmark ul li{float:left;width:142px;height:38px;overflow:hidden;background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-ico-li-1.gif) no-repeat 2px 5px;padding:0 0 5px 13px;margin:0 6px;font-size:12px;*font-size:11px;}
+.col-600 .bookmark ul li a,.col-600 .bookmark ul li a:hover{color:#60177e;}
+
+
+.row-760 .bookmark{width:760px;text-align:left;}
+.row-760 .bookmark .rc_1{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-sw.gif) no-repeat 0 bottom;}
+.row-760 .bookmark .rc_2{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-nw.gif) no-repeat 0 0;padding:0 0 0 15px;}
+.row-760 .bookmark .rc_3{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-se.gif) no-repeat right bottom;}
+.row-760 .bookmark .rc_4{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-ne.gif) no-repeat right top;}
+.row-760 .bookmark .rc_5{padding:0 56px 0 0;}
+.row-760 .bookmark .rc_6{background:#ffcfcf;padding:6px 18px 6px 0;}
+.row-760 .bookmark .ctnr{}
+.row-760 .bookmark .new_rc{display:none;}
+.row-760 .bookmark .new_rc div{}
+.row-760 .bookmark .new_rc_bd{background:#d495a0;padding:1px;}
+.row-760 .bookmark .new_rc_bc{background:#fff0f1;}
+.row-760 .bookmark .new_rc_ft{display:none;}
+.row-760 .bookmark .new_rc_ft div{}
+.row-760 .bookmark .ctnr h3{font-weight:bold;font-size:14px;padding:10px 5px;color:#666;}
+.row-760 .bookmark ul{list-style:none;}
+.row-760 .bookmark ul li{float:left;width:193px;height:30px;overflow:hidden;background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-ico-li-1.gif) no-repeat 2px 5px;padding:0 0 5px 13px;margin:3px 12px 3px 3px;font-size:12px;*font-size:11px;}
+.row-760 .bookmark ul li a,.row-760 .bookmark ul li a:hover{color:#60177e;}
+
+
+.row-920 .bookmark{width:920px;text-align:left;}
+.row-920 .bookmark .rc_1{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-sw.gif) no-repeat 0 bottom;}
+.row-920 .bookmark .rc_2{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-nw.gif) no-repeat 0 0;padding:0 0 0 15px;}
+.row-920 .bookmark .rc_3{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-se.gif) no-repeat right bottom;}
+.row-920 .bookmark .rc_4{background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-bookmark600t1c1-ne.gif) no-repeat right top;}
+.row-920 .bookmark .rc_5{padding:0 56px 0 0;}
+.row-920 .bookmark .rc_6{background:#ffcfcf;padding:6px 18px 6px 0;}
+.row-920 .bookmark .ctnr{}
+.row-920 .bookmark .new_rc{display:none;}
+.row-920 .bookmark .new_rc div{}
+.row-920 .bookmark .new_rc_bd{background:#d495a0;padding:1px;}
+.row-920 .bookmark .new_rc_bc{background:#fff0f1;}
+.row-920 .bookmark .new_rc_ft{display:none;}
+.row-920 .bookmark .new_rc_ft div{}
+.row-920 .bookmark .ctnr h3{font-weight:bold;font-size:14px;padding:10px 5px;color:#666;}
+.row-920 .bookmark ul{list-style:none;}
+.row-920 .bookmark ul li{float:left;width:250px;height:35px;overflow:hidden;background:url(http://hk.l.yimg.com/hk.yimg.com/i/blog/mod-ico-li-1.gif) no-repeat 2px 5px;padding:0 0 5px 13px;margin:3px 8px 3px 3px;font-size:12px;*font-size:11px;}
+.row-920 .bookmark ul li a,.row-920 .bookmark ul li a:hover{color:#60177e;}
+
+
+.col-600 .bookmark ul:after,.row-760 .bookmark ul:after,.row-920 .bookmark ul:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.col-600 .bookmark ul,.row-760 .bookmark ul,.row-920 .bookmark ul{zoom:1} /* ie */
+
+/* 2007-6-14 */
+/*-------- Blog Title CSS --------*/
+.mod-no-rc .rc,
+.mod-no-rc .rc_ft{display:none;}
+.mod-no-rc .rc_bd,
+.mod-no-rc .rc_bc{background:none !important;padding:0 !important;}
+#blog_title .rc_bc .bd{
+color:; 
+background-color:; 
+background-image:url(); 
+}
