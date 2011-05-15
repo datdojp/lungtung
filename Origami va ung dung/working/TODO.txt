@@ -1,8 +1,9 @@
-1.tai lieu tham khao
-2.huong dan thuc hien de tai
-3.muc luc moi
-
-4.cac phan them va sua
-
-5.link cua hinh
+*1.tai lieu tham khao
+*3.muc luc moi
+*4.cac phan them va sua
+*5.link cua hinh va bang
 6.mau nhan xet de tai
+*7.sua lai nhung cho lat nhat co comment
+2.chinh lai theo huong dan thuc hien de tai
+*update table of content
+*fix all TODO
