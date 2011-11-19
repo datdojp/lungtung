@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<title>Login</title>
+	<link rel="stylesheet" href="UrTopSecret.css">
+	<script src="UrTopSecret.js"></script>
+	<script src="jquery-1.7.min.js"></script>
+</head>
+<body>
+	<div style="width:100%; margin-top:100px" align="center">
+		<fieldset style="width:400px">
+			<form autocomplete="on" action="Notes.html" method="post">
+				<table cellspacing="10">
+					<tr>
+						<td class="standardLabel">
+							Email
+						</td>
+						<td class="standardField">
+							<input type="email" class="standardInput" placeholder="Your email" required="required" autofocus="autofocus" name="email" formmethod="get"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="standardLabel">
+							Password
+						</td>
+						<td class="standardField">
+							<input type="password" class="standardInput" required="required" placeholder="Your password" name="password"/>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" class="standardButton" value="    Login    "/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td valign="middle">								
+							<button class="standardCheckbox" onclick="toggleCheckbox();return false;"></button>
+							Remember me
+						</td>						
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<table style="width:100%">
+								<tr>
+									<td>
+										<a href="#">Forget Password</a>
+									</td>								
+									<td style="text-align:right;">
+										<a href="#">Register</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+	</div>
+</body>
+</html>
